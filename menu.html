@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17120f">
+<title>口味與價目｜PROJECT BASQUE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">HANDCRAFTED DESSERT · MADE WITH PATIENCE</div>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="回到首頁">PROJECT BASQUE<small>ARTISAN CHEESECAKE</small></a>
+  <nav class="navlinks" id="navlinks">
+    <a href="index.html">首頁 HOME</a>
+    <a href="story.html">品牌故事 STORY</a>
+    <a href="menu.html" class="active">口味 MENU</a>
+    <a href="order.html">訂購 ORDER</a>
+    <a href="film.html">影片 FILM</a>
+  </nav>
+  <div class="navright">
+    <a class="iconbtn" href="order.html" aria-label="前往訂購">♡</a>
+    <button class="iconbtn menu" id="menuBtn" aria-label="開啟選單">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero" style="background:#f0e6d8;color:#211914">
+  <div class="eyebrow" style="color:#8a5c32">Our signature</div>
+  <h1 style="color:#211914">為喜歡的味道，<br>留一點時間。</h1>
+  <p style="color:#78695c">兩款巴斯克風味：經典原味與藍莓果香，另提供切片、優惠與加購。</p>
+</section>
+
+<section class="products" id="menu" style="padding-top:40px">
+  <div class="product-grid">
+    <article class="product-card reveal">
+      <div class="product-photo photo-original" role="img" aria-label="原味巴斯克蛋糕"></div>
+      <div class="product-meta">
+        <div>
+          <h3>經典原味</h3>
+          <p>Classic Basque · 濃郁乳酪香</p>
+        </div>
+        <div class="price">6吋 NT$ 450</div>
+      </div>
+      <div class="product-bottom">
+        <span>01 / SIGNATURE</span>
+        <button class="text-link details" data-product="original">查看風味 ↗</button>
+      </div>
+    </article>
+    <article class="product-card reveal">
+      <div class="product-photo photo-blueberry" role="img" aria-label="藍莓巴斯克蛋糕"></div>
+      <div class="product-meta">
+        <div>
+          <h3>藍莓果香</h3>
+          <p>Blueberry · 果香與乳酪交織</p>
+        </div>
+        <div class="price">6吋 NT$ 499</div>
+      </div>
+      <div class="product-bottom">
+        <span>02 / FRUITY</span>
+        <button class="text-link details" data-product="blueberry">查看風味 ↗</button>
+      </div>
+    </article>
+    <article class="product-card reveal price-card">
+      <div class="product-photo price-list-photo" role="img" aria-label="巴斯克蛋糕價目表"></div>
+      <div class="product-meta">
+        <div>
+          <h3>完整價目表</h3>
+          <p>Price List · 尺寸／切片／優惠</p>
+        </div>
+        <div class="price">查看大圖</div>
+      </div>
+      <div class="product-bottom">
+        <span>03 / PRICES</span>
+        <button class="text-link details" data-product="pricelist">查看價目 ↗</button>
+      </div>
+    </article>
+  </div>
+  <p style="font-size:10px;color:#8a7764;margin-top:20px">
+    ※ 優惠僅限 6 吋巴斯克蛋糕。北護學生優惠 −$10、當月壽星 −$50。切片與加購品項詳見價目表。
+  </p>
+  <div style="margin-top:28px">
+    <a class="cta" href="order.html" style="color:#211914;border-color:#8e643e">前往訂購 <span>↗</span></a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div>
+    <div class="brand">PROJECT BASQUE</div>
+    <div>焦香之外，是柔軟的本質。</div>
+  </div>
+  <div class="footer-links">
+    <a href="story.html">故事</a>
+    <a href="menu.html">口味</a>
+    <a href="order.html">訂購</a>
+    <a href="film.html">影片</a>
+  </div>
+  <div>© 2026 PROJECT BASQUE</div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="close" id="closeModal" aria-label="關閉">×</button>
+    <div class="eyebrow" id="modalEyebrow">PRODUCT DETAILS</div>
+    <h3 id="modalTitle">經典原味</h3>
+    <p id="modalText"></p>
+    <div class="modal-actions">
+      <a class="cta" href="order.html" id="addBtn">前往訂購 <span>↗</span></a>
+      <button class="cta" id="closeCta">繼續瀏覽</button>
+    </div>
+  </div>
+</div>
+
+<div class="img-modal" id="imgModal" role="dialog" aria-modal="true" aria-label="價目表大圖">
+  <div class="img-modal-box">
+    <button class="close" id="closeImgModal" aria-label="關閉">×</button>
+    <img src="images/price-list.jpg" alt="巴斯克蛋糕完整價目表">
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="common.js"></script>
+</body>
+</html>
