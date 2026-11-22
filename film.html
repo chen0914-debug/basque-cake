@@ -6,6 +6,25 @@
 <meta name="theme-color" content="#17120f">
 <title>影片介紹｜PROJECT BASQUE</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+.film-page{padding:40px 6vw 80px}
+.film-block{margin-bottom:56px}
+.film-block h2{
+  font:clamp(26px,3vw,36px) var(--serif);font-weight:400;margin:0 0 8px;
+}
+.film-block .eyebrow{margin-bottom:6px}
+.video-local{
+  width:100%;max-width:720px;border:1px solid var(--line);
+  background:#100b08;display:block;
+}
+.video-local video{
+  width:100%;height:auto;display:block;vertical-align:top;
+}
+@media(max-width:800px){
+  .film-page{padding:30px 5vw 60px}
+  .film-block{margin-bottom:40px}
+}
+</style>
 </head>
 <body>
 <div class="announcement">HANDCRAFTED DESSERT · MADE WITH PATIENCE</div>
@@ -26,72 +45,37 @@
 
 <main>
 <section class="page-hero">
-  <div class="eyebrow">A moment of Basque</div>
-  <h1>用畫面記住<br>一口焦香。</h1>
-  <p>巴斯克蛋糕的魅力在於「燒焦」的外層與幾乎流動的內餡。以下影片與分鏡，聚焦在這份對比與質感。</p>
+  <div class="eyebrow">Videos</div>
+  <h1>影片介紹</h1>
 </section>
 
-<section class="film" style="padding-top:20px">
-  <div class="reveal">
-    <div class="video-wrap">
-      <!-- 短片：視覺以巴斯克焦香表層與切開質感為主，適合品牌介紹氛圍 -->
-      <iframe
-        src="https://www.youtube.com/embed/RlEoc6zF0-I?rel=0"
-        title="Basque Burnt Cheesecake"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"></iframe>
+<section class="film-page">
+  <div class="film-block reveal">
+    <div class="eyebrow">01 · Process</div>
+    <h2>蛋糕製作過程</h2>
+    <div class="video-local">
+      <video controls playsinline preload="metadata">
+        <source src="videos/process.mp4" type="video/mp4">
+        您的瀏覽器不支援影片播放。
+      </video>
     </div>
-    <p style="font-size:11px;color:var(--muted);margin-top:12px">
-      參考影像：Turkuaz Kitchen《Basque Burnt Cheesecake》。正式品牌片可於日後替換為自有拍攝版本。
-    </p>
   </div>
-  <div class="reveal">
-    <div class="eyebrow">Brand film storyboard</div>
-    <h2>15 秒，焦香與柔軟</h2>
-    <p>
-      品牌形象片建議以真實蛋糕為主角：先看見高溫留下的焦黑表面，再切開露出柔滑乳酪，最後回到品牌字標。不需要複雜劇情，質感本身就是故事。
-    </p>
-    <div class="film-list">
-      <div class="film-row"><span>01　焦香登場</span><span>00–04 SEC</span></div>
-      <div class="film-row"><span>02　切開的瞬間</span><span>04–08 SEC</span></div>
-      <div class="film-row"><span>03　質感特寫</span><span>08–12 SEC</span></div>
-      <div class="film-row"><span>04　品牌收尾</span><span>12–15 SEC</span></div>
-    </div>
-    <button class="cta" id="filmBtn" type="button">查看分鏡說明 <span>↗</span></button>
-  </div>
-</section>
 
-<section style="padding-top:20px">
-  <div class="section-head reveal">
-    <div>
-      <div class="eyebrow">What we want to show</div>
-      <h2>鏡頭裡的巴斯克</h2>
-    </div>
-  </div>
-  <div class="steps" style="grid-template-columns:repeat(3,1fr)">
-    <div class="step reveal">
-      <span>01</span>
-      <h3>焦黑表層</h3>
-      <p>高溫烘焙留下的深色、略帶苦甜的外皮，是巴斯克最容易辨識的記號。</p>
-    </div>
-    <div class="step reveal">
-      <span>02</span>
-      <h3>柔滑內餡</h3>
-      <p>切開後微微顫動的乳酪質地，對比外層的焦香，一口有兩種層次。</p>
-    </div>
-    <div class="step reveal">
-      <span>03</span>
-      <h3>日常時刻</h3>
-      <p>不強調華麗擺盤，而是「值得停下來的一小段時間」——與品牌理念一致。</p>
+  <div class="film-block reveal">
+    <div class="eyebrow">02 · Product &amp; Price</div>
+    <h2>成品與價目表</h2>
+    <div class="video-local">
+      <video controls playsinline preload="metadata">
+        <source src="videos/product.mp4" type="video/mp4">
+        您的瀏覽器不支援影片播放。
+      </video>
     </div>
   </div>
 </section>
 
 <section class="contact">
-  <div class="eyebrow">Taste it yourself</div>
-  <h2>看完畫面，來一口真實的。</h2>
-  <p>原味與藍莓皆可線上預訂。</p>
+  <div class="eyebrow">Order</div>
+  <h2>想嚐一口？</h2>
   <a class="cta" href="order.html">前往訂購 <span>↗</span></a>
 </section>
 </main>
@@ -109,18 +93,6 @@
   </div>
   <div>© 2026 PROJECT BASQUE</div>
 </footer>
-
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal-box">
-    <button class="close" id="closeModal" aria-label="關閉">×</button>
-    <div class="eyebrow" id="modalEyebrow">STORYBOARD</div>
-    <h3 id="modalTitle">分鏡說明</h3>
-    <p id="modalText"></p>
-    <div class="modal-actions">
-      <button class="cta" id="closeCta">關閉</button>
-    </div>
-  </div>
-</div>
 <script src="common.js"></script>
 </body>
 </html>
